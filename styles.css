@@ -1,0 +1,37 @@
+.layout {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+
+.grow1 { flex-grow: 1; }
+
+.bitmoji{
+  height: 350px;
+  width: 180px;
+}
+.logo{
+  height: 100px;
+  width: 100px;
+}
+.pensacola{
+  height:80px;
+  width: 100px;
+}
+
+.container {
+  position: relative;
+}
+
+.text {
+  position: relative; /* change position from absolute to relative */
+  margin-top: 10px; /* add margin top to move the text below the image */
+  width: 100px;
+  background: rgba(0, 0, 0, 0.5); /* background color of the text */
+  color: white; /* text color */
+  visibility: hidden; /* initially hidden */
+}
+
+.container:hover .text {
+  visibility: visible; /* display text on hover */
+}
